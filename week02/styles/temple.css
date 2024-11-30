@@ -4,7 +4,7 @@ body {
   color: #f0f4f7;
   min-height: 100vh;
 }
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   body {
     font-size: 16px;
     display: flex;
@@ -12,72 +12,106 @@ body {
   }
 }
 
+header {
+  display: flex;
+  min-height: 50px;
+  justify-content: space-between;
+}
+
 .navbar {
   background-color: #333;
-  padding: 10px 20px;
 }
 
 .nav-list {
   list-style: none;
   display: flex;
-  margin: 0;
-  padding: 0;
-  justify-content: space-around;
+  margin: 1em;
+  padding: 2em;
 }
-
 .nav-list li {
   margin: 0 15px;
-  flex: 1 1 100%;
+  flex: 2 2 100%;
 }
-
 .nav-list a {
+  background-color: #a09a9a;
   text-decoration: none;
   color: white;
   font-size: 16px;
   padding: 5px 10px;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.2s ease;
 }
-
 .nav-list a:hover {
   background-color: #a09a9a;
-  border-radius: 10px;
+  border-radius: 15px;
+}
+.nav-list .nav-toggle{
+  display:flex;
 }
 
-.image-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  padding: 40px;
+.navbar #title {
+  white-space: nowrap;
+  font: 2em sans-serif;
+  padding: 2rem;
 }
 
-h1 {
+h2 {
   text-align: center;
   color: #a09a9a;
 }
+
 @media (min-width: 700px) {
   #menu {
     display: none;
   }
 }
-
-@media (max-width: 700px) {
-    div.image-gallery {
-        grid-template-columns: 1fr;
-      }
-}
 @media (max-width:700px) {
-    #menu {
-        display: block;
-        font-size: 30px;
-        color: rgb(181, 44, 44);
-        cursor: pointer;
-      }
+  #menu {
+    display: block;
+    font-size: 30px;
+    color: rgb(197, 63, 70);
+    cursor: pointer;
+  }
+  .nav-list {
+    display: none;
+  }
+}
+
+.image-gallery {
+  display: grid;
+  gap: 35px;
+  padding: 30px;
+}
+
+.image-gallery img {
+  width: 100%;
+}
+
+.image-gallery {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 700px) {
+  .image-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .image-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .show li {
-  display: block;
+  display: inline-block;
 }
 
 footer {
-  color: #a09a9a;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
 }
+
+  
