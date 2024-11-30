@@ -44,8 +44,8 @@ header {
   background-color: #a09a9a;
   border-radius: 15px;
 }
-.nav-list .nav-toggle{
-  display:flex;
+.nav-list .nav-toggle {
+  display: flex;
 }
 
 .navbar #title {
@@ -64,12 +64,20 @@ h2 {
     display: none;
   }
 }
-@media (max-width:700px) {
+@media (max-width: 700px) {
   #menu {
     display: block;
     font-size: 30px;
-    color: rgb(197, 63, 70);
+    color: rgb(177, 173, 173);
     cursor: pointer;
+    padding: 2rem;
+    text-decoration: none;
+  }
+  #menu::before {
+    content: "☰";
+  }
+  #menu.show::before {
+    content: "X";
   }
   .nav-list {
     display: none;
@@ -113,5 +121,3 @@ footer {
   padding: 20px;
   font-size: 14px;
 }
-
-  
