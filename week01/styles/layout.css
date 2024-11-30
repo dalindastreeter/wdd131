@@ -1,38 +1,73 @@
 body {
   display: grid;
   height: 100vh;
-  grid-template: auto 1fr auto / 300px 1fr auto;
+ grid-template : auto 1fr auto/ auto 1fr auto;
 }
 
+
 header {
-  background: lightpink;
-  padding: 2rem;
+  background: rgb(25, 47, 50);
+  padding: 1rem;
   grid-column: 1 / 4;
+  
+  
 }
 
 .left-sidebar {
-  background: lightblue;
-  grid-column: 1 / 2;
-}
-
-main {
-  background: coral;
-  grid-column: 2 / 3;
+  background: rgb(120, 196, 180);
+  grid-column: 1/3;
+  padding: 20rem;
 }
 
 .right-sidebar {
-  background: yellow;
-  grid-column: 3 / 4;
+  background: hsl(30, 2%, 22%);
+  grid-column: 3/4;
+  padding: 20rem;
 }
 
 footer {
   background: wheat;
   padding: 2rem;
   text-align: center;
-  grid-column: 1 / 4;
+  grid-column: 1/4;
 }
 
-.left-sidebar,
-.right-sidebar {
-  padding: 1rem;
+
+.navigation {
+	list-style: none;
+	display: flex;
+	background-color: #6e9da5;
+	align-items: center;
+    
+    
+    
+}
+.navigation li {
+	flex:   auto; 
+    
+}
+
+   
+.navigation a {
+	display: block;
+	color: #eee;
+	padding: 1rem;
+	text-decoration: none;
+	text-align: center;
+    
+ 	
+}
+.navigation a:hover {
+	font-weight: 900;
+	text-decoration: underline;
+	text-decoration-color: rgb(78, 96, 198);
+}
+
+.wrap {
+		flex-wrap: wrap;
+}
+
+p {
+	text-align: center;
+	font-size: smaller;
 }
