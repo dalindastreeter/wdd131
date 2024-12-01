@@ -22,7 +22,6 @@ nav {
 
 @media (max-width: 700px) {
   nav {
-    grid-template-columns: repeats(2, 1fr);
     grid-template-rows: auto auto;
   }
   nav #title {
