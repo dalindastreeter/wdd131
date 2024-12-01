@@ -162,3 +162,7 @@ footer {
   padding: 20px;
   font-size: 14px;
 }
+figure figcaption {
+  color: rgb(89, 84, 84);
+  text-align: center;
+}
