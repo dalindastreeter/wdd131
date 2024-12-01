@@ -115,11 +115,7 @@ h1 {
   color: var(--secondary-color);
 }
 
-@media (min-width: 700px) {
-  #menu {
-    display: none;
-  }
-}
+
 @media (max-width: 700px) {
   #menu {
     display: block;
@@ -149,18 +145,6 @@ h1 {
 
 .image-gallery {
   grid-template-columns: 1fr;
-}
-
-@media (min-width: 700px) {
-  .image-gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1000px) {
-  .image-gallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 .show li {
