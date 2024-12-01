@@ -1,14 +1,25 @@
+:root {
+  --primary-color: #f0f4f7;
+  --secondary-color: #a09a9a;
+  --secondary-dark-color: #333333;
+  --small-font-size: 14px;
+  --medium-font-size: 16px;
+  --medium-large-font-size: 1.5rem;
+  --large-font-size: 30px;
+  --border-radius: 15px;
+}
+
 body {
   font-family: Arial, sans-serif;
-  background-color: rgb(224, 229, 241);
-  color: #f0f4f7;
+  background-color: var(--primary-color);
+  color: var(--primary-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 @media (max-width: 700px) {
   body {
-    font-size: 16px;
+    font-size: var(--medium-font-size);
     display: flex;
     justify-content: space-around;
   }
@@ -47,7 +58,7 @@ nav {
   nav .nav-list.show li a {
     display: block;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: var(--medium-large-font-size);
   }
 
   header #title,
@@ -58,7 +69,7 @@ nav {
 }
 
 .navbar {
-  background-color: #333;
+  background-color: var(--secondary-dark-color);
 }
 
 .nav-list {
@@ -78,16 +89,16 @@ nav {
   flex: 2 2 100%;
 }
 .nav-list a {
-  background-color: #a09a9a;
+  background-color: var(--secondary-color);
   text-decoration: none;
-  color: white;
-  font-size: 16px;
+  color: var(--primary-color);
+  font-size: var(--medium-font-size);
   padding: 5px 10px;
   transition: background-color 0.2s ease;
 }
 .nav-list a:hover {
-  background-color: #a09a9a;
-  border-radius: 15px;
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
 }
 .nav-list .nav-toggle {
   display: flex;
@@ -101,7 +112,7 @@ nav {
 
 h1 {
   text-align: center;
-  color: #a09a9a;
+  color: var(--secondary-color);
 }
 
 @media (min-width: 700px) {
@@ -112,8 +123,8 @@ h1 {
 @media (max-width: 700px) {
   #menu {
     display: block;
-    font-size: 30px;
-    color: rgb(177, 173, 173);
+    font-size: var(--large-font-size);
+    color: var(--secondary-color);
     cursor: pointer;
     padding: 2rem;
     text-decoration: none;
@@ -157,13 +168,13 @@ h1 {
 }
 
 footer {
-  background-color: #333;
-  color: white;
+  background-color: var(--secondary-dark-color);
+  color: var(--primary-color);
   text-align: center;
   padding: 20px;
-  font-size: 14px;
+  font-size: var(--small-font-size);
 }
 figure figcaption {
-  color: rgb(89, 84, 84);
+  color: var(--secondary-dark-color);
   text-align: center;
 }
