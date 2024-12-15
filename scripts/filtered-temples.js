@@ -13,13 +13,13 @@ allTemples.addEventListener("click", () => showTemples(temples));
 const oldMenuItems = document.querySelector("#oldTemples");
 oldMenuItems.addEventListener("click", () => {
   showTemples(
-    temples.filter((temple) => currentYear - getYear(temple.dedicated) > 20)
+    temples.filter((temple) => currentYear - getYear(temple.dedicated) > 1900)
   );
 });
 const newMenuItems = document.querySelector("#newTemples");
 newMenuItems.addEventListener("click", () => {
   showTemples(
-    temples.filter((temple) => currentYear - getYear(temple.dedicated) < 20)
+    temples.filter((temple) => currentYear - getYear(temple.dedicated) < 2000)
   );
 });
 const largeMenuItems = document.querySelector("#largeTemples");
