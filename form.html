@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Here is a listing of Temples from The Church of Jesus Christ of Latter-Day Saints.">
+    <meta name="author" content="Dalinda Streeter">
+    <title>Review</title>
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/form-getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/form.css" />
+</head>
+
+<body>
+    <h1>Product Review</h1>
+    <form>
+        <label for="Product"> Product Name?<abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+        <input type="text" id="items" name="cosas" list="l1" required placeholder="Choose a Product">
+        <datalist id="l1"></datalist>
+
+        <label for="Rating">Overall Rating</label>
+        <div class="stars">
+            <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+            <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+            <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+            <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+            <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+
+        </div>
+        <label>Date of Installation<input type= date name="select date"></label>
+
+        <div>Which features did you find useful in the product?<br> (check all that apply) </div>
+        <label><input type="checkbox" name="Durability" value="yes">Durability</label><br>
+        <label><input type="checkbox" name="Easy to use" value="yes">Easy to use</label><br>
+        <label><input type="checkbox" name="Performance" value="yes">Performance</label><br>
+        <label><input type="checkbox" name="Design" value="yes">Design</label>
+
+        <div>Write a Review</div>
+        <label><input type="text"></input>
+        
+            
+
+        <div>Your Name</div>
+        <label><input type="text"></input>
+        
+  
+
+        
+        <input type="submit" value="Post Review"></input>
+    </form>
+    <footer>
+        <p>
+            ©<span id="currentYear"></span> Dalinda Streeter, United States of
+            America
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

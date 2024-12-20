@@ -1,0 +1,118 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ecf7f4;
+    color: #f3f6f4;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #110f0f;
+}
+
+form {
+    max-width: 700px;
+    margin: 20px auto;
+    background: #3c525a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="checkbox"],
+input[type="radio"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ede6e6;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.stars {
+    display: flex;
+    gap: 5px;
+    justify-content: start;
+    margin: 10px 0 20px;
+}
+
+.stars input[type="radio"] {
+    display: none;
+}
+
+.stars label {
+    width: 30px;
+    height: 30px;
+    background: #ccc;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+.stars input[type="radio"]:checked + label {
+    background: #08292f;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    background:     #010102;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: #444;
+    color: #fff;
+    font-size: 12px;
+}
+
+footer p {
+    margin: 15px 0;
+}
+
+abbr {
+    text-decoration: none;
+    cursor: help;
+    border-bottom: 1px dotted;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.write a review{
+
+}
+
